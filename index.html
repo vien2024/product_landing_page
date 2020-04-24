@@ -1,0 +1,90 @@
+<html>
+<head>
+  <style>
+    #header-img {
+       width: 	100%;
+       height: 380px;
+      }
+    .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+    #nav-bar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}​
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+ font-family: sans-serif;
+}
+.nav-link {
+  padding: 20px;
+  margin: 20px;
+}
+section {
+padding-bottom: 40px;
+padding-top: 40px;
+}
+.flex-container > div {
+  background-color: #fff185;
+  width: 200px;
+  text-align: center;
+  font-size: 14px;
+  </style>
+
+
+</head>
+<body>
+  <center>
+  <header id="header">
+    <nav id="nav-bar">
+      <a class="nav-link" href="#learn-more">Learn more</a>
+      <a class="nav-link" href="#request-coupon">Request Coupon</a>
+      <a class="nav-link" href="#buy-on-amazon">Buy on Amazon</a>
+    </nav>
+    <img id="header-img" src="https://scontent.fsgn6-1.fna.fbcdn.net/v/t1.0-9/p960x960/62073570_2292153507768335_4747869827836674048_o.jpg?_nc_cat=107&_nc_sid=730e14&_nc_ohc=yOEZg7CAmpYAX95rPmK&_nc_ht=scontent.fsgn6-1.fna&_nc_tp=6&oh=57c03dadcd52f44905d3239d25b640a4&oe=5EC7E74E">
+  </header>
+  <section id="learn-more">
+    <h1>Daidus's Intro</h1>
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/mwtbIWJL4pA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <br>
+  </section>
+  <section id="request-coupon">
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input id="email" type="email" name="email" placeholder="Your email bae"></input>
+      <input id="submit" type="submit"></input>
+    </form>
+  </section>
+  <section id="buy-on-amazon">
+    <div class="flex-container">
+  <div>Buy on Amazon</div>
+  <div>Buy on Ebay</div>
+  <div>Buy on Makeship</div>
+   </div>
+   </center>
+  </section>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
